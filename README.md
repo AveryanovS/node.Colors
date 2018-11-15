@@ -7,13 +7,13 @@ npm install --save github:AveryanovS/node.Colors
 ### Usage
 The easiest way is to require single color and use it to get prepared string
 ```javascript
-const { magenta } = require('node.Colors');
+const { magenta } = require('colors');
 
 console.log( magenta('magenta') );
 ```
 You can also build string with different colored parts
 ```javascript
-const { colors } = require('node.Colors');
+const { colors } = require('colors');
 
 console.log( colors(
         { green: 'green', yellow: 'yellow', red: 'red' }
