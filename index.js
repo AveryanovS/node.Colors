@@ -30,6 +30,6 @@ const build = ( data ) => {
     return colorSetJoiner( data );
 };
 
-exports.build = build;
+exports.colors = build;
 for(const color in COLORS)
     exports[color] = ( string ) => buildColorString( color, string );

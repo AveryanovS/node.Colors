@@ -1,0 +1,19 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "Console output coloring ",
+  "main": "index.js",
+  "scripts": {
+    "test":"node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AveryanovS/node.Colors.git"
+  },
+  "author": "AveryanovS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AveryanovS/node.Colors/issues"
+  },
+  "homepage": "https://github.com/AveryanovS/node.Colors#readme"
+}
