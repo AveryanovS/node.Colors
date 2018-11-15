@@ -22,7 +22,7 @@ const colorSetJoiner = ( set ) => Object.keys(set)
     .map(color => buildColorString( color, set[color] ) )
     .join('');
 
-const build = ( data ) => {
+const colors = ( data ) => {
     if( Array.isArray( data ) )
         return data
             .map( colorSetJoiner )
@@ -30,6 +30,8 @@ const build = ( data ) => {
     return colorSetJoiner( data );
 };
 
-exports.colors = build;
-for(const color in COLORS)
-    exports[color] = ( string ) => buildColorString( color, string );
+module.exports = { colors };
+Object.keys(COLORS)
+    .map(color => {
+        module.exports[color] = ( string ) => buildColorString( color, string );
+    });
